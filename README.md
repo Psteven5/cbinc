@@ -1,5 +1,5 @@
 # Can't Believe It's Not C++!
-((AKA my personal std, but almost every name and acronym are already taken))
+*AKA my personal std, but almost every name and acronym are already taken*
 
 ## Includes
 ### defer.h
@@ -20,3 +20,5 @@ A stack interface on top of vector, which restrict to adding to the top and taki
 Extra utility macro's that make your code more explicit, like the function-, private-, header-, ref keywords and pun_cast
 ### vector.h
 A dynamic array implementation named according to C++, because I Can't Believe It's Not C++!
+
+*checkout the examples*
