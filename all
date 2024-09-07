@@ -1,0 +1,15 @@
+#ifndef CANT_BELIEVE_ITS_NOT_CPP
+#define CANT_BELIEVE_ITS_NOT_CPP
+
+#include "assert.h"
+#include "defer.h"
+#include "dict.h"
+#include "list.h"
+#include "print.h"
+#include "queue.h"
+#include "slice.h"
+#include "stack.h"
+#include "util.h"
+#include "vector.h"
+
+#endif /* CANT_BELIEVE_ITS_NOT_CPP */
