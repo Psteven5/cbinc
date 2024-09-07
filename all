@@ -1,7 +1,9 @@
 #ifndef CANT_BELIEVE_ITS_NOT_CPP
 #define CANT_BELIEVE_ITS_NOT_CPP
 
-#include "defer.h"
+#ifndef CBINC_NO_DEFER
+    #include "defer.h"
+#endif
 #include "dict.h"
 #include "list.h"
 #include "print.h"
