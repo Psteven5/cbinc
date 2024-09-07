@@ -2,7 +2,8 @@
 
 #include "../all"
 
-function int main(void) {
+function int main(void)
+{
     printn("GUESS THE NUMBER!!!");
 
     var const MINIMUM = 1;
