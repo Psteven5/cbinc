@@ -1,6 +1,7 @@
 #include "../all"
 
-private function void foo(struct slice(int) slice) {
+private function void foo(struct slice(int) slice)
+{
     int const *result;
 
     result = slice__access(int, 41, slice);
@@ -18,7 +19,8 @@ private function void foo(struct slice(int) slice) {
         printn("");
 }
 
-function int main(void) {
+function int main(void)
+{
     int numbers[42];
     for (int i = 0; i < sizeof(numbers) / sizeof(*numbers); ++i)
         numbers[i] = i + 1;
