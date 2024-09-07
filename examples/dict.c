@@ -3,10 +3,10 @@
 function int main(void) {
     struct dict(int) dict = {};
 
-    var const mario  = slice__create(char, "Mario", 5);
-    var const luigi  = slice__create(char, "Luigi", 5);
-    var const peach  = slice__create(char, "Peach", 5);
-    var const bowser = slice__create(char, "Bowser", 5);
+    var const mario  = slice__create(char, "Mario",  5);
+    var const luigi  = slice__create(char, "Luigi",  5);
+    var const peach  = slice__create(char, "Peach",  5);
+    var const bowser = slice__create(char, "Bowser", 6);
 
     dict__insert(int, mario,  1, dict);
     dict__insert(int, luigi,  2, dict);
