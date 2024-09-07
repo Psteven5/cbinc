@@ -2,7 +2,8 @@
 
 #include "../all"
 
-noreturn function int main(void) {
+noreturn function int main(void)
+{
     struct list(char) list = {};
 
     list__push_back(char, 'A', list);
