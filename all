@@ -1,7 +1,7 @@
 #ifndef CANT_BELIEVE_ITS_NOT_CPP
 #define CANT_BELIEVE_ITS_NOT_CPP
 
-#ifndef CBINC_NO_DEFER
+#if defined(__GNUC__) && !defined(__clang__)
     #include "defer.h"
 #endif
 #include "dict.h"
