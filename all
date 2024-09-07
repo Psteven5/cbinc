@@ -1,7 +1,6 @@
 #ifndef CANT_BELIEVE_ITS_NOT_CPP
 #define CANT_BELIEVE_ITS_NOT_CPP
 
-#include "assert.h"
 #include "defer.h"
 #include "dict.h"
 #include "list.h"
