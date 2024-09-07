@@ -22,7 +22,7 @@ function int main(void) {
         }
         
         if (number < MINIMUM || MAXIMUM < number) {
-            fprintn(stderr, "error: ", number, " is not between ", MINIMUM, " and ", MAXIMUM, " (inclusive)");
+            fprintfn(stderr, "error: %i is not between %i and %i (inclusive)", number, MINIMUM, MAXIMUM);
             continue;
         }
 
