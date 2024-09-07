@@ -1,5 +1,5 @@
 # Can't Believe It's Not C++!
-*AKA my personal std, but almost every name and acronym are already taken*
+*AKA my personal std extension, but almost every name and acronym are already taken*
 
 ## Includes
 ### defer.h
