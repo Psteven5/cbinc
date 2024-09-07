@@ -16,7 +16,7 @@
 
 #define function
 
-#ifndef CBINC_NO_VAR
+#ifdef __GNUC__
     #define var __auto_type
 #endif
 
