@@ -19,20 +19,28 @@ function int main(void) {
     int const *result;
 
     result = dict__search(int, mario, dict);
-    if (NULL != result)
-        printn((char *)mario.data, ": ", *result);
-    
+    if (NULL != result) {
+        fwrite(mario.data, mario.size, 1, stdout);
+        printn(": ", *result);
+    }
+
     result = dict__search(int, luigi, dict);
-    if (NULL != result)
-        printn((char *)luigi.data, ": ", *result);
+    if (NULL != result) {
+        fwrite(luigi.data, luigi.size, 1, stdout);
+        printn(": ", *result);
+    }
 
     result = dict__search(int, peach, dict);
-    if (NULL != result)
-        printn((char *)peach.data, ": ", *result);
+    if (NULL != result) {
+        fwrite(peach.data, peach.size, 1, stdout);
+        printn(": ", *result);
+    }
 
     result = dict__search(int, bowser, dict);
-    if (NULL != result)
-        printn((char *)bowser.data, ": ", *result);
+    if (NULL != result) {
+        fwrite(bowser.data, bowser.size, 1, stdout);
+        printn(": ", *result);
+    }
 
     dict__destroy(int, NULL, dict);
 }
