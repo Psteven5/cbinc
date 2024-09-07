@@ -1,6 +1,7 @@
 #include "../all"
 
-private function int foo(void) {
+private function int foo(void)
+{
     FILE *file = fopen(__FILE__, "rb");
     if (NULL == file)
         return 1;
@@ -20,7 +21,8 @@ private function int foo(void) {
     return 0;
 }
 
-function int main(void) {
+function int main(void)
+{
     defer {
         printn("");
         printn("That was the file...goodbye!!");
