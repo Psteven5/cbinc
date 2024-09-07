@@ -4,7 +4,8 @@
 
 private struct stack(uintptr_t) stack = {};
 
-private function void emit(void) {
+private function void emit(void)
+{
     var const result = stack__top(uintptr_t, stack);
     if (NULL == result)
         return;
@@ -14,12 +15,14 @@ private function void emit(void) {
     print(c);
 }
 
-private function void star(void) {
+private function void star(void)
+{
     stack__push(uintptr_t, 42, stack);
     emit();
 }
 
-private function void stars(void) {
+private function void stars(void)
+{
     var const result = stack__top(uintptr_t, stack);
     if (NULL == result)
         return;
@@ -30,7 +33,8 @@ private function void stars(void) {
         star();
 }
 
-private function void square(void) {
+private function void square(void)
+{
     stack__duplicate(uintptr_t, stack);
 
     var const result = stack__top(uintptr_t, stack);
@@ -46,7 +50,8 @@ private function void square(void) {
     }
 }
 
-private function void triangle(void) {
+private function void triangle(void)
+{
     var const result = stack__top(uintptr_t, stack);
     if (NULL == result)
         return;
@@ -60,7 +65,8 @@ private function void triangle(void) {
     }
 }
 
-private function void sub(intptr_t b) {
+private function void sub(intptr_t b)
+{
     var const result = stack__top(uintptr_t, stack);
     if (NULL == result)
         return;
@@ -70,14 +76,16 @@ private function void sub(intptr_t b) {
     stack__push(uintptr_t, a - b, stack);
 }
 
-private function void tower(void) {
+private function void tower(void)
+{
     stack__duplicate(uintptr_t, stack);
     sub(1);
     triangle();
     square();
 }
 
-function int main(void) {
+function int main(void)
+{
     stack__push(uintptr_t, 7, stack);
     stars();
     printn("");
