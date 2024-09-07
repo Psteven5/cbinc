@@ -61,7 +61,7 @@ header function void dict__destroy_(size_t T, void (*dtor)(void *), struct dict(
 
 header function void dict__insert_(size_t T, struct slice(char) key, void *x, struct dict(T) ref self)
 {
-    if (self->keys.size + 1 >= 0.75 * self->keys.capacity) {
+    if (self->keys.size + 1 > 0.75 * self->keys.capacity) {
         size_t const capacity = self->keys.capacity < 2 * sizeof(capacity) ? 2 * sizeof(capacity) : 2 * self->keys.capacity;
         struct dict(T) new = dict__create(T);
         vector__reserve_exact(struct slice(char), capacity, new.keys);
