@@ -23,6 +23,6 @@ function int main(void) {
     for (int i = 0; i < sizeof(numbers) / sizeof(*numbers); ++i)
         numbers[i] = i + 1;
     
-    struct slice(int) slice = slice__create(int, numbers, sizeof(numbers) / sizeof(*numbers));
+    var const slice = slice__create(int, numbers, sizeof(numbers) / sizeof(*numbers));
     foo(slice);
 }
