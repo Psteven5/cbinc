@@ -1,6 +1,7 @@
 #include "../all"
 
-function int main(void) {
+function int main(void)
+{
     struct dict(int) dict = {};
 
     var const mario  = slice__create(char, "Mario",  5);
