@@ -1,5 +1,4 @@
-#include "../defer.h"
-#include "../print.h"
+#include "../all"
 
 private function int foo(void)
 {
