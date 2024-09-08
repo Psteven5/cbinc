@@ -1,6 +1,6 @@
 #include <stdnoreturn.h>
 
-#include "../all"
+#include "../list.h"
 
 noreturn function int main(void)
 {
