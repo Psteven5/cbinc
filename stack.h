@@ -1,7 +1,7 @@
 #ifndef CBINC_STACK_H
 #define CBINC_STACK_H
 
-#include "vector.h"
+#include <cbinc/vector.h>
 
 #define stack(T) vector(T)
 
