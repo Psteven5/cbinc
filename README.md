@@ -15,7 +15,7 @@ A queue interface on top of the linked list, which restricts to adding to the ba
 ### slice.h
 Slices are just a pointer with a length... although they are really convenient
 ### stack.h
-A stack interface on top of vector, which restrict to adding to the top and taking from the top, with some extra methods for Forth like stack manipulation
+A stack interface on top of vector, which restricts to adding to the top and taking from the top, with some extra methods for Forth like stack manipulation
 ### util.h
 Extra utility macro's that make your code more explicit, like the function-, private-, header-, ref keywords and pun_cast
 ### vector.h
