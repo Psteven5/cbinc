@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "slice.h"
+#include <cbinc/slice.h>
 
 #define vector(T) vector
 
