@@ -1,6 +1,6 @@
 #include <time.h>
 
-#include "../all"
+#include "../print.h"
 
 function int main(void)
 {
