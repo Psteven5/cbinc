@@ -1,6 +1,7 @@
 #include <stdnoreturn.h>
 
 #include "../list.h"
+#include "../print.h"
 
 noreturn function int main(void)
 {
