@@ -1,4 +1,4 @@
-#include "../all"
+#include <cbinc/cbinc.h>
 
 /* https://wiki.c2.com/?ExampleForthCode */
 
