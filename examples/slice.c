@@ -1,4 +1,4 @@
-#include "../all"
+#include <cbinc/cbinc.h>
 
 private function void foo(struct slice(int) slice)
 {
