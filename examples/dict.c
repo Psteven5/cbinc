@@ -1,4 +1,5 @@
 #include "../dict.h"
+#include "../print.h"
 
 function int main(void)
 {
