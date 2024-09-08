@@ -1,4 +1,4 @@
-#include "../all"
+#include "../dict.h"
 
 function int main(void)
 {
