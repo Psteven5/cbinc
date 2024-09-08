@@ -1,6 +1,6 @@
 #include <time.h>
 
-#include "../all"
+#include <cbinc/cbinc.h>
 
 typedef __bf16 bfloat16_t;
 
