@@ -3,7 +3,7 @@
 
 #include <stddef.h>
 
-#include "util.h"
+#include <cbinc/util.h>
 
 #define slice(T) slice
 
