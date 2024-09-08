@@ -32,18 +32,19 @@ struct dict(T) {
     struct vector(T) items;
 };
 
+/* fnv1a hash */
 header function uint64_t dict__key_hash(struct slice(char) key)
 {
-    #define FNV_OFFSET_BASIS ((uint64_t) 0xcbf29ce484222325)
-    #define FNV_PRIME        ((uint64_t) 0x100000001b3)
+    #define CBINC_FNV_OFFSET_BASIS ((uint64_t) 0xcbf29ce484222325)
+    #define CBINC_FNV_PRIME        ((uint64_t) 0x100000001b3)
     
-    uint64_t hash = FNV_OFFSET_BASIS;
+    uint64_t hash = CBINC_FNV_OFFSET_BASIS;
     for (char *it = slice__begin(char, key); it < slice__end(char, key); ++it)
-        hash = (hash ^ *it) * FNV_PRIME;
+        hash = (hash ^ *it) * CBINC_FNV_PRIME;
     return hash;
 
-    #undef FNV_PRIME
-    #undef FNV_OFFSET_BASIS
+    #undef CBINC_FNV_PRIME
+    #undef CBINC_FNV_OFFSET_BASIS
 }
 
 header function int dict__key_compare(struct slice(char) a, struct slice(char) b)
