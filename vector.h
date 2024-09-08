@@ -66,7 +66,7 @@ struct vector(T) {
     size_t size, capacity;
 };
 
-header function size_t nearest2(size_t x)
+header function size_t cbinc__nearest2(size_t x)
 {
     --x;
     for (size_t i = 1; i < sizeof(x) * 8; ++i)
@@ -77,7 +77,7 @@ header function size_t nearest2(size_t x)
 header function void vector__reserve_(size_t T, size_t amount, struct vector(T) ref self)
 {
     if (amount > self->capacity) {
-        size_t const amount2 = nearest2(amount);
+        size_t const amount2 = cbinc__nearest2(amount);
         self->data = realloc(self->data, amount2 * T);
         self->capacity = amount2;
     }
