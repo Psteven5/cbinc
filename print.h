@@ -6,9 +6,9 @@
 #include <stdint.h>
 #include <stdio.h>
 
-#include "dependencies/map.h"
+#include <cbinc/dependencies/map.h>
 
-#include "util.h"
+#include <cbinc/util.h>
 
 #define printfn(...) do { \
     printf(__VA_ARGS__);  \
