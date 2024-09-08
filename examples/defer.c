@@ -1,6 +1,5 @@
 #include "../defer.h"
 #include "../print.h"
-#include "../util.h"
 
 private function int foo(void)
 {
