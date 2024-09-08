@@ -1,7 +1,7 @@
 #ifndef CBINC_QUEUE_H
 #define CBINC_QUEUE_H
 
-#include "list.h"
+#include <cbinc/list.h>
 
 #define queue(T) list(T)
 
