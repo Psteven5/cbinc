@@ -1,4 +1,4 @@
-#include "../all"
+#include <cbinc/cbinc.h>
 
 function int main(void)
 {
