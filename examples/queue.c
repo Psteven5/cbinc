@@ -1,4 +1,4 @@
-#include "../all"
+#include <cbinc/cbinc.h>
 
 typedef uint16_t eid_t;
 
