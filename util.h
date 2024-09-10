@@ -27,8 +27,11 @@
 #define deref *
 
 #define pun_cast(T, x) ({ \
-    typeof(x) X = (x);    \
-    *(T *)&X;             \
+    union {               \
+        typeof(x) in;     \
+        T out;            \
+    } X = {(x)};          \
+    X.out;                \
 })
 
 #endif /* CBINC_UTIL_H */
