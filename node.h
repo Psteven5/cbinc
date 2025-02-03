@@ -3,7 +3,7 @@
 
 #include <stdlib.h>
 
-#include <cbinc/util.h>
+#include "util.h"
 
 #define node(T) node
 
