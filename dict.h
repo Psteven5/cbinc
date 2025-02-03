@@ -3,8 +3,8 @@
 
 #include <stdint.h>
 
-#include <cbinc/slice.h>
-#include <cbinc/vector.h>
+#include "slice.h"
+#include "vector.h"
 
 #define dict(T) dict
 
