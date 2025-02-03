@@ -3,7 +3,7 @@
 
 #include <string.h>
 
-#include <cbinc/node.h>
+#include "node.h"
 
 #define list(T) list
 
