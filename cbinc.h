@@ -2,15 +2,15 @@
 #define CANT_BELIEVE_ITS_NOT_CPP
 
 #if defined(__GNUC__) && !defined(__clang__) && !defined(__INTEL_COMPILER)
-    #include <cbinc/defer.h>
+    #include "defer.h"
 #endif
-#include <cbinc/dict.h>
-#include <cbinc/list.h>
-#include <cbinc/print.h>
-#include <cbinc/queue.h>
-#include <cbinc/slice.h>
-#include <cbinc/stack.h>
-#include <cbinc/util.h>
-#include <cbinc/vector.h>
+#include "dict.h"
+#include "list.h"
+#include "print.h"
+#include "queue.h"
+#include "slice.h"
+#include "stack.h"
+#include "util.h"
+#include "vector.h"
 
 #endif /* CANT_BELIEVE_ITS_NOT_CPP */
